@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Uchen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/russ room logo.avif" /></a>
+        <div class="nav-links" id="NavLinks">
+          <i class="fa fa-heart" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="#about-us">ABOUT</a></li>
+            <li><a href="#review-header">REVIEWS</a></li>
+            <li><a href="#contact-header">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>live music venue | art gallary | social space</h1>
+        <p>
+          Above Solomon's, 730 K St, Sacramento, CA 95814 <br />runs from 9am -
+          12am <br />Monday - Friday
+        </p>
+        <a href="" class="button">scroll down for more info!</a>
+      </div>
+    </section>
+    <!-----comment-->
+    <section id="review-header">
+      <section class="reviews">
+        <h1>What our customers have to say:</h1>
+
+        <div class="row">
+          <div class="reviews-col">
+            <h3>From Yelp:</h3>
+            <p>
+              Open mic on Thursday nights are awesome. They have amazing drinks
+              and chill people working there. A good vibe's in there.
+            </p>
+          </div>
+        </div>
+        <div class="reviews-col">
+          <h3>From Google Reviews:</h3>
+          <p>Delicious iced coffee, awesome sound engineer, positive crowd.</p>
+        </div>
+        <div class="reviews-col">
+          <h3>What Locals are Saying:</h3>
+          <p>
+            Great venue, great staff, and probably the best stage backdrop in
+            all of Sacramento- a huge window looking down on DoCo. Small
+            selection of beers on tap, but plenty of good cocktails etc
+            available downstairs at Solomon's.
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <!-----images-->
+
+    <section class="photos">
+      <h1>photo gallery :)</h1>
+      <p>here are some of our favorite images!</p>
+      <div class="container">
+        <img src="images/russ room.jpeg" />
+
+        <img src="images/russ room 1.jpg" />
+
+        <img src="images/russ room 2.jpg" />
+
+        <img src="images/russ room 3.png" />
+
+        <img src="images/russ room 4.jpg" />
+      </div>
+    </section>
+
+    <!-------musicians-->
+
+    <section class="music">
+      <h1>Live Music Venu</h1>
+      <h3>
+        we welcome both emerging and established artists to play at our cafe.
+        Please contact for more info
+      </h3>
+      <div class="row">
+        <div class="music-row">
+          <img src="./images/artist1.jpeg" />
+          <h3>Harley White Jr</h3>
+          <p>
+            Harley White Jr’s Jazz Trio on stage tonight for the opening
+            reception of Michael Solomon’s Let’s Go See Some Jazz photography
+            show 6-9pm tonight!
+          </p>
+        </div>
+
+        <div class="music-row">
+          <img src="./images/artist2.jpeg" />
+          <h3>June Swoon</h3>
+          <p>
+            Lydell grew up entrenched in the local DIY music scene of Sacramento
+            as a songwriter and multi-instrumentalist. Her projects included The
+            Dreaded Diamond and Paper Pistols. She moved to the Southwestern
+            desert in 2011, where she began experimenting with folk and psych
+            rock.
+          </p>
+        </div>
+
+        <div class="music-row">
+          <img src="./images/artist3.jpeg" />
+          <h3>Michael Solomon</h3>
+          <p>
+            Michael Solomon’s photography show featuring some of the all-time
+            best jazz artists from the Monterey Jazz Festival are on display now
+            in @therussroom with 100% of the net proceeds benefiting the
+            September music festival!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!------- javascript for toggle menu------->
+
+    <script>
+      var NavLinks = document.getElementById("NavLinks");
+      function showMenu() {
+        NavLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        NavLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
+
+<!------Contact-->
+
+<section id="contact-header">
+  <section class="contact">
+    <h1>We'd love to hear from you soon!</h1>
+
+    <a href="mailto:azhang30xxx@gmail.com" class="button">CONTACT US</a>
+  </section>
+
+  <section id="about-us">
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        "The Russ Room is a 2nd floor event space at our Downtown location,
+        designed for live music, entertainment and private bookings." Shows can
+        be held any night of the week. <br />
+      </p>
+      <div class="media">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+    </section>
+  </section>
+</section>
